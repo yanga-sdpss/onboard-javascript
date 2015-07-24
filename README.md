@@ -16,6 +16,7 @@ and it's superset, TypeScript, that we use for development.
 ## Brief  
 
 You task is to build a grid/table in TypeScript that fetches data from a server and displays it. Here are the requirements:  
+
 1. The grid should cover the entire screen. The browser scrollbar should not appear.  
 1. The columns widths should be distributed evenly.  
 1. Display column headings based on the data you get back from the web service.  
@@ -29,39 +30,40 @@ The web service you will retrieve data from is a little Golang REST service that
 Here are the relevant API calls:
 
 1. Get total number of records
-	Path: HTTP GET /recordCount
-	Response: Integer number in body of response
-	Example response:
-		200
+	Path: `HTTP GET /recordCount`  
+	Response: Integer number in body of response  
+	Example response:  
+		`200`
 
 1. Get column names  
-	Path: HTTP GET /columns  
-	Response: JSON in body of response
-	Example response:
-		{
-			"Columns":	[
-				"ID",
-				"City",
-				"Population"			
-			]
-		}
+	Path: `HTTP GET /columns`  
+	Response: JSON in body of response  
+	Example response:  
+		`{  
+			"Columns":	[  
+				"ID",  
+				"City",  
+				"Population"  
+			]  
+		}`  
 
 1. Get records  
-	Path: HTTP GET /records/{from}/{to}   
+	Path: `HTTP GET /records/{from}/{to}`   
 	Response: JSON in body of response  
-	The order of entries in a record corresponds to the order of the columns returned by the /columns API  
-	Example response:
-		{
-			"Records": 	[
-				[0, "Cape Town", 3500000],
-				[1, "New York", 8500000],
-				[2, "Johannesburg", 4500000]
-			]
-		}
+	The order of entries in a record corresponds to the order of the columns returned by the `/columns` API  
+	Example response:  
+		`{  
+		 	"Records": 	[  
+				[0, "Cape Town", 3500000],  
+				[1, "New York", 8500000],  
+				[2, "Johannesburg", 4500000]  
+			]  
+		}`  
 
 ## Code Review  
 
-The code review will take the following into account:  
+Once you are done and happy with your solution, submit your code for code review by creating a pull request in GITHUB. The code review will take the following into account:  
+
 1. Was the brief correctly followed, does the grid work as expected  
 1. Is the code style according to [JavaScript Style Guide](https://imqssoftware.atlassian.net/wiki/display/AR/Javascript+Style+Guide)  
 1. User-centric thinking - is the grid easy to use  
