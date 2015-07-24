@@ -39,26 +39,23 @@ Here are the relevant API calls:
 	Path: `HTTP GET /columns`  
 	Response: JSON in body of response  
 	Example response:  
-		`{  
-			"Columns":	[  
-				"ID",  
-				"City",  
-				"Population"  
-			]  
-		}`  
+		`[  
+			"ID",  
+			"City",  
+			"Population"  
+		]`  
 
 1. Get records  
-	Path: `HTTP GET /records/{from}/{to}`   
+	Path: `HTTP GET /records?from={fromID}&to={toID}`   
 	Response: JSON in body of response  
 	The order of entries in a record corresponds to the order of the columns returned by the `/columns` API  
+	The `from` and `to` parameters correspond to the record index which run from `0` to `record count - 1`  
 	Example response:  
-		`{  
-		 	"Records": 	[  
+		`[  
 				[0, "Cape Town", 3500000],  
 				[1, "New York", 8500000],  
 				[2, "Johannesburg", 4500000]  
-			]  
-		}`  
+		]`  
 
 ## Code Review  
 
@@ -79,8 +76,10 @@ Once you are done and happy with your solution, submit your code for code review
 ## Getting Started  
 
 1. Fork this GIT repository under your own GIT account  
-1. Create a new TypeScript project with an index.html file in the root of the repository  
+1. Open console and change directory to `server` directory  
+1. Run `env.bat`  
+1. Run `go run main.go`  
+1. Open up your browser and point it to [http://localhost:2050](http://localhost:2050). You should see "Hello"  
+1. Create a new TypeScript project in the root of the repository  
 1. Under the Web section of the project properties under Servers, change the dropdown to "External Host" and the project URL to http://localhost:2050  
-1. Run runserver.bat in the root of the repository  
-1. Open up your browser and point it to [http://localhost:2050](http://localhost:2050)  
 1. Get coding!  
