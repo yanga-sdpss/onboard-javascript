@@ -22,7 +22,7 @@ You task is to build a grid/table in TypeScript that fetches data from a server 
 1. Display column headings based on the data you get back from the web service.  
 1. The grid should have controls to navigate through data. You can choose a suitable way of doing this.  
 1. Display the first page of data when you open up page for first time.  
-1. Don't use any third-party libraries. You can use vanilla JQuery if you want.  
+1. Don't use any third-party libraries other than JQuery (already included in `third_party` directory).  
 
 ## Web Service API  
 
@@ -80,6 +80,11 @@ Once you are done and happy with your solution, submit your code for code review
 1. Run `env.bat`  
 1. Run `go run main.go`  
 1. Open up your browser and point it to [http://localhost:2050](http://localhost:2050). You should see "Hello"  
-1. Using Visual Studio, create a new TypeScript project in the root of the repository  
-1. Under the Web section of the project properties under Servers, change the dropdown to "External Host" and the project URL to http://localhost:2050  
+1. Using Visual Studio, create a new TypeScript project called "Grid" in the root of the repository  
+1. Close Visual Studio, navigate to the repo root and move the contents of the Grid directory to the root (replacing `index.html`).  
+1. Re-open Grid.sln in Visual Studio.  
+1. To allow debugging from the IDE, open the project properties in Visual Studio. Under the `Web` section:  
+	- Under `Servers` section, change the dropdown to "External Host" and the project URL to http://localhost:2050  
+	- Under `Debuggers` section, untick ASP.NET  
+	- If you debug from Visual Studio now, Internet Explorer should open up with a demo TypeScript project.  
 1. Get coding!  
