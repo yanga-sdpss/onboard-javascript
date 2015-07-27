@@ -62,7 +62,7 @@ Here are the relevant API calls:
 Once you are done and happy with your solution, submit your code for code review by creating a pull request in GITHUB. The code review will take the following into account:  
 
 1. Was the brief correctly followed, does the grid work as expected  
-1. Is the code style according to [JavaScript Style Guide](https://imqssoftware.atlassian.net/wiki/display/AR/Javascript+Style+Guide)  
+1. Is the code style according to our [JavaScript Style Guide](https://imqssoftware.atlassian.net/wiki/display/AR/Javascript+Style+Guide)  
 1. User-centric thinking - is the grid easy to use  
 1. Suitable comments  
 1. Performance considerations   
