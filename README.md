@@ -2,7 +2,7 @@
 
 This is a JavaScript project for all new developers to complete before venturing into our web frontend codebase.  
 
-Once you complete this project and went through code review you will have a much better understanding of JavaScript
+Once you complete this project, and have been through code review, you will have a much better understanding of JavaScript
 and it's superset, TypeScript, that we use for development.  
 
 ## Technologies you will encouter  
@@ -29,11 +29,11 @@ You task is to build a grid/table in TypeScript that fetches data from a server 
 The web service you will retrieve data from is a little Golang REST service that is packaged with this repository. It runs on port 2050. 
 Here are the relevant API calls:
 
-1. Get total number of records
+1. Get total number of records  
 	Path: `HTTP GET /recordCount`  
 	Response: Integer number in body of response  
 	Example response:  
-		`200`
+		`350`
 
 1. Get column names  
 	Path: `HTTP GET /columns`  
@@ -71,7 +71,7 @@ Once you are done and happy with your solution, submit your code for code review
 ## Pre-requisites  
 
 1. You need to have set up your development environment [as described here](https://imqssoftware.atlassian.net/wiki/display/AR/Dev+Environment).  
-1. You can use either Microsoft Visual Studio Pro or Microsoft Visual Studio Express for Web as IDE  
+1. You can use either Microsoft Visual Studio Pro or Microsoft Visual Studio Express for Web as IDE.  
 
 ## Getting Started  
 
@@ -80,6 +80,6 @@ Once you are done and happy with your solution, submit your code for code review
 1. Run `env.bat`  
 1. Run `go run main.go`  
 1. Open up your browser and point it to [http://localhost:2050](http://localhost:2050). You should see "Hello"  
-1. Create a new TypeScript project in the root of the repository  
+1. Using Visual Studio, create a new TypeScript project in the root of the repository  
 1. Under the Web section of the project properties under Servers, change the dropdown to "External Host" and the project URL to http://localhost:2050  
 1. Get coding!  
