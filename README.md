@@ -5,7 +5,7 @@ This is a JavaScript project for all new developers to complete before venturing
 Once you complete this project, and have been through code review, you will have a much better understanding of JavaScript
 and it's superset, TypeScript, that we use for development.  
 
-## Technologies you will encouter  
+## Technologies you will encounter  
 
 1. HTML  
 1. CSS  
