@@ -10,10 +10,12 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 const recordCount = 1000000
 const columnCount = 11
+const delayResponse = 500 * time.Millisecond
 
 var columns = [columnCount]string{"ID", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
 var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -36,10 +38,12 @@ func httpSendError(w http.ResponseWriter, err error) {
 }
 
 func handlerRecordCount(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(delayResponse)
 	fmt.Fprintf(w, "%v", recordCount)
 }
 
 func handlerColumns(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(delayResponse)
 	jsonString, err := json.Marshal(columns)
 	if err == nil {
 		fmt.Fprintf(w, "%s", jsonString)
@@ -55,6 +59,7 @@ func shortHash(val string) string {
 }
 
 func handlerRecords(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(delayResponse)
 	fromIdx, err := strconv.Atoi(r.FormValue("from"))
 	if err != nil {
 		httpSendError(w, err)
