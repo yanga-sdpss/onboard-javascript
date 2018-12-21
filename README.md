@@ -72,7 +72,7 @@ Once you are done and happy with your solution, submit your code for code review
 ## Pre-requisites  
 
 1. You need to have set up your development environment [as described here](https://imqssoftware.atlassian.net/wiki/display/AR/Dev+Environment).  
-1. You can use either Microsoft Visual Studio Pro or Microsoft Visual Studio Express for Web as IDE.  
+1. We suggest using VSCode, but you can use your IDE of choice.   
 
 ## Getting Started  
 These steps include just enough detail to guide you. Each step will require some additional research on your part:
