@@ -78,19 +78,19 @@ Once you are done and happy with your solution, submit your code for code review
 These steps include just enough detail to guide you. Each step will require some additional research on your part:
 1. Fork this GIT repository under your own GIT account  
 1. Start up the backend server:
-1.1. Open console and change directory to `server` directory  
-1.1. Run `env.bat`  
-1.1. Run `go run main.go`  
-1.1. Open up your browser and point it to [http://localhost:2050](http://localhost:2050). You should see "Hello"  
+- Open console and change directory to `server` directory  
+- Run `env.bat`  
+- Run `go run main.go`  
+- Open up your browser and point it to [http://localhost:2050](http://localhost:2050). You should see "Hello"  
 1. Create the frontend project:  
-1.1. Open another console in the project root directory  
-1.1. Run `npm init` to initialise the JavaScript project. You can just use the default options.  
-1.1. Install the TypeScript npm package.  
-1.1. Install TypeScript type definitions for JQuery.  
-1.1. Create an `app.ts` file in the root directory and add the following code to it:
+- Open another console in the project root directory  
+- Run `npm init` to initialise the JavaScript project. You can just use the default options.  
+- Install the TypeScript npm package.  
+- Install TypeScript type definitions for JQuery.  
+- Create an `app.ts` file in the root directory and add the following code to it:  
     `window.onload = () => { $("body").text("Hello world"); }`  
-1.1. Add a npm script called "build" to `package.json` that does the TypeScript build (using the `tsconfig.json` included in the project).  
-1.1. Run `npm run build`  
-1.1. You will see a new file `app.js` in the project root. Add an entry for this script in `index.html`.  
-1.1. Refresh [http://localhost:2050](http://localhost:2050). You should see "Hello world"  
+- Add a npm script called "build" to `package.json` that does the TypeScript build (using the `tsconfig.json` included in the project).  
+- Run `npm run build`  
+- You will see a new file `app.js` in the project root. Add an entry for this script in `index.html`.  
+- Refresh [http://localhost:2050](http://localhost:2050). You should see "Hello world"  
 1. Get coding!  
