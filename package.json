@@ -1,0 +1,26 @@
+{
+  "name": "onboard-javascript",
+  "version": "1.0.0",
+  "description": "JS Onboard Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanga-sdpss/onboard-javascript.git"
+  },
+  "keywords": [
+    "onboard-test"
+  ],
+  "author": "Yanga Ndamane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanga-sdpss/onboard-javascript/issues"
+  },
+  "homepage": "https://github.com/yanga-sdpss/onboard-javascript#readme",
+  "dependencies": {
+    "@types/jquery": "^3.3.31"
+  }
+}
