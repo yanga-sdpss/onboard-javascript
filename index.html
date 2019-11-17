@@ -4,22 +4,27 @@
 	<title>JS Onboard Project</title>
 	<script type="text/javascript" charset="utf-8" src="third_party/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="body" style="overflow: hidden;">
+<body>
 	<div id="form-content">
 		Go To Start Index: <input type="number" id="go-to-index" value="0">
-		<button id="go-to-button" type="button">Go To Index</button>
-		<button id="previous-page" type="button">Go To Previous Page</button>
-		<button id="next-page" type="button">Go To Next Page</button>
+		<button id="index-button" type="button">Index</button>
+		<button id="previous-page" type="button">Previous Page</button>
+		<button id="next-page" type="button">Next Page</button>
 	</div>
-	<table id='wrapper-table' style="width:100%; height:100%; table-layout: fixed;">
-		<thead id="wrapper-table-header-row"></thead>
-		<tbody id="wrapper-table-content-body"></tbody>
+	<!-- <table id='wrapper-table' style="width:100%; height:100%; table-layout: fixed;">
+		<thead id="wrapper-table-header-row">
+
+		</thead>
+		<tbody id="wrapper-table-content-body">
+
+		</tbody>
 	</table>
-	<div id="table-arbitrary-footer"></div></div>
+	<div id="table-arbitrary-footer"></div></div> -->
 </body>
-<style>
+<!-- <style>
 	table tr td, table tr td{
 		text-align: center;
 	}
@@ -58,5 +63,5 @@
 			content: attr(data-title);
 		}
 	}
-</style>
+</style> -->
 </html>

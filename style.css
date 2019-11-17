@@ -1,0 +1,13 @@
+table {
+    position: absolute;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+}
+
+th, td {
+    width: 100%;
+    border: 2px solid red;
+    background: red;
+    
+}
