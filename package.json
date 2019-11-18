@@ -20,7 +20,8 @@
     "url": "https://github.com/yanga-sdpss/onboard-javascript/issues"
   },
   "homepage": "https://github.com/yanga-sdpss/onboard-javascript#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/jquery": "^3.3.31"
   }
 }
